@@ -1,22 +1,36 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
 
 ---
 
 # 100-Words
 
+[Live version:](https://github.io/erlange/100-words)
+https://github.io/erlange/100-words
+
 High-performance word generator, suitable for your band name, album, book or your future award-winning movie titles.
 
-It is a [Svelte](https://svelte.dev) boilerplate app with [routing](https://github.com/mefechoel/svelte-navigator), [TypeScript](https://www.typescriptlang.org/) support and [Babel](https://babeljs.io/) to facilitate running on ancient browsers such as IE11.
+* [**Get started**](#get-started)
+* [**Installation**](#installation)
+* [**Building and running in production mode**](#building-and-running-in-production-mode)
+* [**Single-page app mode**](#single-page-app-mode)
+* [**Using TypeScript**](#using-typescript)
+* [**Deploying to the web**](#deploying-to-the-web)
+
+It is a [Svelte](https://svelte.dev) boilerplate app with [routing](https://github.com/mefechoel/svelte-navigator) and [TypeScript](https://www.typescriptlang.org/) support, [Babel](https://babeljs.io/) to facilitate running on ancient browsers such as IE11 and UI from [Materialize-CSS](https://materializecss.com/) and [FontAwesome](https://fontawesome.com/).
 
 
 ## Get started
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
-Install the dependencies...
+### Installation
+
+Download the zip file or clone this repository:
 
 ```bash
-cd [this-app-directory]
+mkdir [your-local-directory]
+cd [your-local-directory]
+git clone https://github.com/erlange/100-words.git
+cd 100-words
 npm install
 ```
 
@@ -26,7 +40,9 @@ npm install
 npm run dev
 ```
 
-Navigate to [localhost:5000](http://localhost:5432). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+Navigate to [localhost:5432](http://localhost:5432). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+
+Change the port by editing [this line in package.json](https://github.com/erlange/100-words/blob/main/package.json#L8) file.
 
 By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
 
@@ -98,3 +114,7 @@ Then, from within your project folder:
 npm run build
 surge public my-project.surge.sh
 ```
+---
+*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+
+© 2021 -  [erlange](mailto:eri.airlangga@gmail.com)

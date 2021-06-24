@@ -15,7 +15,7 @@
   <title>{title}</title>
 </svelte:head>
 
-<Router basepath="/" primary={false}>
+<Router basepath="/100-words" primary={false}>
 <div  class="row">
 	<nav>
 		<div class="nav-wrapper indigo">
@@ -39,7 +39,7 @@
 						</span>
 					</li>
 					<li>
-						<a href="https://github.com/erlange" class="z-depth-3 tooltipped btn-floating btn-large waves-effect waves-light green" data-tooltip="Go to Github page">
+						<a href="https://github.com/erlange/100-words" class="z-depth-3 tooltipped btn-floating btn-large waves-effect waves-light green" data-tooltip="Go to Github page">
 							<i class="fab fa-github" style="font-size:1.5rem;"></i>
 						</a>
 					</li>
