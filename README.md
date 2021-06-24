@@ -3,10 +3,12 @@
 
 # 100-Words
 
-[Live version:](https://github.io/erlange/100-words)
-https://github.io/erlange/100-words
+[Live version:](https://erlange.github.io/100-words/)
+https://erlange.github.io/100-words/
 
 High-performance word generator, suitable for your band name, album, book or your future award-winning movie titles.
+
+![100-Words](https://raw.githubusercontent.com/erlange/100-words/main/public/img/100-words.jpg)
 
 * [**Get started**](#get-started)
 * [**Installation**](#installation)
