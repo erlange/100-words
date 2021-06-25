@@ -88,13 +88,6 @@
     font-size: 1.25rem;
   }
 
-  a {
-    color: #1f1fff;
-    text-decoration: none;
-  }
-  a:hover {
-    color: #00a30e;
-  }
   button {
     font-weight: 600;
     font-size: 1.5rem;

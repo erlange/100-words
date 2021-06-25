@@ -2,7 +2,7 @@
   import { scale} from 'svelte/transition';
   import WordComponent from './random-child.svelte';
   import WordModalComponent from './modal.word.svelte';
-  import {generateName} from '../utils/random-names';
+  import {generateName} from './random-names.svelte';
 
   interface IWord {
     word: string;
@@ -50,6 +50,7 @@
   {#if wordModalVisible}
     <WordModalComponent word="{currentWord.word}" borderColor="{currentWord.bgColor}" on:close-word-modal={() => wordModalVisible = false} />
   {/if}
+
   <div class="outer">
     {#each theWords as word, index (index) }
       <div transition:scale>

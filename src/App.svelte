@@ -15,7 +15,8 @@
   <title>{title}</title>
 </svelte:head>
 
-<Router basepath="/100-words" primary={false}>
+<Router basepath="/" primary={false}>
+	
 <div  class="row">
 	<nav>
 		<div class="nav-wrapper indigo">
