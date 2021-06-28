@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\data"
+    "\\data",
+    "\\src",
+    "\\src\\components"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\src\\App.svelte",
   "PreviewInSolutionExplorer": false
 }
