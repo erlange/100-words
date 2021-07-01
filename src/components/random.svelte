@@ -1,8 +1,9 @@
 <script lang="ts">
-  import { scale} from 'svelte/transition';
+  import { scale, fade} from 'svelte/transition';
   import WordComponent from './random-child.svelte';
   import WordModalComponent from './modal.word.svelte';
   import {generateName} from './random-names.svelte';
+import { onMount } from 'svelte';
 
   interface IWord {
     word: string;
@@ -42,9 +43,31 @@
     wordModalVisible = true;
   }
 
+  const autoRandomize = (max: number = 25) => {
+    const interval = setInterval(() => {
+      const which = [] as number[];
+      for (let i = 0; i < max; i++) {
+        which.push(Math.floor(Math.random() * 100));
+      }
+      which.forEach(f => {
+        theWords[f].word = generateName();
+      });
+    }, 5000);
+    return () => {
+      clearInterval(interval);
+    };
+  }
+
+  onMount(() => {
+    autoRandomize(10);
+  });
+
 	let wordModalVisible = false;
 
   let theWords = generateNames(seed);
+
+  // autoRandomize(10);
+
 
 </script>
   {#if wordModalVisible}

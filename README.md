@@ -43,7 +43,9 @@ npm install
 npm run dev
 ```
 
-Navigate to [localhost:5432](http://localhost:5432). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+Navigate to [localhost:5432](http://localhost:5432/100-words). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+
+Change [this line in App.svelte](https://github.com/erlange/100-words/blob/main/src/App.svelte#L18) to change the base-href to other than `/100-words`
 
 Change the port by editing [this line in package.json](https://github.com/erlange/100-words/blob/main/package.json#L8) file.
 

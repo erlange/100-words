@@ -15,7 +15,7 @@
   <title>{title}</title>
 </svelte:head>
 
-<Router basepath="/" primary={false}>
+<Router basepath="/100-words" primary={false}>
 	
 <div  class="row">
 	<nav>
@@ -30,7 +30,7 @@
 				
 				<ul class="right hide-on-sm">
 					<li>
-						<span class="z-depth-3 tooltipped btn-floating btn-large blue waves-effect waves-light" data-tooltip="Click to shuffle!" on:click="{shuffle}">
+						<span class="z-depth-3 tooltipped btn-floating btn-large blue waves-effect waves-light" data-tooltip="Click to generate new random words!" on:click="{shuffle}">
 							<i class="fas fa-redo"></i>
 						</span>&nbsp&nbsp&nbsp&nbsp
 					</li>
